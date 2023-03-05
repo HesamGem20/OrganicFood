@@ -1,0 +1,375 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  grid-template-columns: auto;
+  font-weight: 300;
+  font-family: "Oswald", sans-serif;
+  background-color: lightgrey;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Oswald;
+  src: url("./fonts/Oswald/Oswald-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: Oswald;
+  src: url("./fonts/Oswald/Oswald-ExtraLight.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: Oswald;
+  src: url("./fonts/Oswald/Oswald-Light.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Oswald;
+  src: url("./fonts/Oswald/Oswald-Bold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: Lato;
+  src: url("./fonts/Lato/Lato-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: Lato;
+  src: url("./fonts/Lato/Lato-Light.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Lato;
+  src: url("./fonts/Lato/Lato-Bold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: fa-brands;
+  src: url("../../fonts/font-awesome/webfonts/fa-brands-400.woff");
+}
+@font-face {
+  font-family: fa-regular;
+  src: url("../../fonts/font-awesome/webfonts/fa-regular-400.woff");
+}
+@font-face {
+  font-family: fa-solid;
+  src: url("../../fonts/font-awesome/webfonts/fa-solid-400.woff");
+}
+@font-face {
+  font-family: LatoReg;
+  src: url("../../fonts/Lato/Lato-Regular.ttf");
+}
+@font-face {
+  font-family: LatoBlack;
+  src: url("../../fonts/Lato/Lato-Black.ttf");
+}
+@font-face {
+  font-family: Lato-BlackItalic;
+  src: url("../../fonts/Lato/Lato-BlackItalic.ttf");
+}
+@font-face {
+  font-family: LatoBold;
+  src: url("../../fonts/Lato/Lato-Blod.ttf");
+}
+@font-face {
+  font-family: Lato-BoldItalic;
+  src: url("../../fonts/Lato/Lato-BoldItalic.ttf");
+}
+@font-face {
+  font-family: Lato-Hairline;
+  src: url("../../fonts/Lato/Lato-Hairline.ttf");
+}
+@font-face {
+  font-family: Lato-HairlineItalic;
+  src: url("../../fonts/Lato/Lato-HairlineItalic.ttf");
+}
+@font-face {
+  font-family: Lato-Italic;
+  src: url("/fonts/Lato/Lato-Italic.ttf");
+}
+@font-face {
+  font-family: Lato-Light;
+  src: url("../../fonts/Lato/Lato-Light.ttf");
+}
+@font-face {
+  font-family: Lato-LightItalic;
+  src: url("../../fonts/Lato/Lato-LightItalic.ttf");
+}
+@font-face {
+  font-family: Oswald-Bold;
+  src: url("../../fonts/Oswald/Oswald-Bold.ttf");
+}
+@font-face {
+  font-family: Oswald-ExtraLight;
+  src: url("../../fonts/Oswald/Oswald-ExteralLight.ttf");
+}
+@font-face {
+  font-family: Oswald-Light;
+  src: url("../../fonts/Oswald/Oswald-Light.ttf");
+}
+@font-face {
+  font-family: Oswald-Medium;
+  src: url("../../fonts/Oswald/Oswald-Medium.ttf");
+}
+@font-face {
+  font-family: Oswald-Regular;
+  src: url("../../fonts/Oswald/Oswald-Regular.ttf");
+}
+@font-face {
+  font-family: Oswald-SemiBold;
+  src: url("../../fonts/Oswald/Oswald-SemiBold.ttf");
+}
+@media screen and (min-width: 576px) {
+  main {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  main {
+    width: 70%;
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  main {
+    width: 60%;
+  }
+}
+.part1 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.part1 .image {
+  background-size: cover;
+  width: 100%;
+  height: 50rem;
+  filter: brightness(50%);
+}
+.part1 .top-menu {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 20px;
+  width: 100%;
+}
+.part1 .top-menu-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  position: relative;
+  font-size: 1.2rem;
+}
+.part1 .top-menu-navbar-1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  position: absolute;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  bottom: 1px;
+  left: 15rem;
+}
+.part1 .top-menu-navbar-1 a {
+  text-decoration: none;
+  color: white;
+}
+.part1 .top-menu-navbar-2 {
+  display: inline;
+  padding: 0.5rem;
+  align-items: center;
+  list-style-type: none;
+  text-decoration: none;
+  position: absolute;
+  margin-bottom: 0.5rem;
+  bottom: 1px;
+  right: 15rem;
+}
+.part1 .top-menu-navbar-2 a {
+  text-decoration: none;
+  color: white;
+}
+.part1 .main-menu {
+  top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: absolute;
+  border-top: 1px solid white;
+}
+.part1 .main-menu-title {
+  font-family: "Lato-Italic";
+  font-style: italic;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  margin-top: 1.5rem;
+  top: 0px;
+  left: 15rem;
+  color: white;
+}
+.part1 .main-menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  margin-top: 1.5rem;
+  right: 15rem;
+  width: 30%;
+}
+.part1 .main-menu ul li {
+  list-style-type: none;
+}
+.part1 .main-menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+}
+.part1 .logo {
+  position: absolute;
+  margin-top: 20rem;
+  left: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.part1 .logo-img {
+  width: 10rem;
+  height: 10rem;
+}
+.part1 .logo h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+.part1 .logo-button {
+  width: 20rem;
+  height: 3.5rem;
+  border-radius: 30rem;
+  color: white;
+  background-color: rgb(10, 209, 10);
+  outline: none;
+  border: none;
+}
+
+.part2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.part2 h2 {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: row;
+  font-size: 3rem;
+}
+.part2-note {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 25%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 40rem;
+}
+.container-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background-color: hsla(30, 24%, 89%, 0.7);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 25%;
+  height: 350px;
+}
+.container-card div {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.container-card div p {
+  width: 100%;
+}
+.container-card-nature {
+  color: green;
+  font-family: "Oswalt Bold";
+  font-size: 2.5rem;
+}
+.container-card-icon {
+  padding: 1rem;
+  margin-top: 4rem;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+.footer {
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 2rem;
+}
+.footer-image {
+  width: 100%;
+  height: 40rem;
+  margin-top: 5px;
+  background-image: url("/img/banner_image_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer-copy-write {
+  margin-top: 4rem;
+  font-size: 1.3rem;
+}/*# sourceMappingURL=main.css.map */
